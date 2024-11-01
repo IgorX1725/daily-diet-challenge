@@ -1,0 +1,37 @@
+{
+  "name": "daily-diet-challenge",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "knex": "node --import tsx ./node_modules/.bin/knex",
+    "lint": "eslint src db --ext .ts --fix",
+    "build": "tsup src -d build",
+    "start": "node build/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgorX1725/daily-diet-challenge.git"
+  },
+  "author": "igor cortez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IgorX1725/daily-diet-challenge/issues"
+  },
+  "homepage": "https://github.com/IgorX1725/daily-diet-challenge#readme",
+  "description": "",
+  "dependencies": {
+    "@fastify/cookie": "^11.0.1",
+    "dotenv": "^16.4.5",
+    "fastify": "^5.0.0",
+    "knex": "^3.1.0",
+    "sqlite3": "^5.1.7",
+    "tsx": "^4.19.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^2.2.2",
+    "@types/node": "^22.8.5",
+    "typescript": "^5.6.3"
+  }
+}
